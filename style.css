@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(600px, 4fr);
+    grid-template-rows: 200px minmax(815px, 3fr);
+    grid-template-areas: "sidebar header" "sidebar main";
+
+}
+
+.header{
+    background-color: rgb(217, 214, 214);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+
+}
+
+.textbox{
+    padding: 20px;
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+ 
+.textbox input {
+    width: 650px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.notifications{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+    margin-right: 30px;
+    font-size: 20px;
+    gap: 5px;
+    text-decoration: underline;
+}
+
+.profile{
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    margin-left: 50px;
+    font-size: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile .profilepic{
+    border: solid;
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+.text div{
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons button{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(123, 123, 179);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    background-image: url(/images/gradient.webp);
+    background-position: center;
+    grid-area: sidebar;
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: white;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.menu-items ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    gap: 18px;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+
+}
+
+.menu-items .menu-icon{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.menu-icon path{
+    fill: rgb(232, 229, 229);
+}
+
+.main-content{
+    background-color: rgb(179, 183, 183);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    
+    
+}
+
+.project-container{
+    grid-row: 1/3;
+}
+
+.project-container h{
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin: 20px;
+}
+
+.projects .project-item{
+    border: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: rgb(79, 78, 78);
+    width: 320px;
+    height: 200px;
+    padding: 20px;
+    background-color: rgb(207, 195, 239);
+}
+
+.project-item p1{
+    font-size: 2em;
+}
+
+
+
+.announcements-container H{
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+}
+
+.announcements-container .announcements{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px;
+    background-color: rgb(235, 231, 231);
+    border-radius: 15px;
+   
+}
+
+.announcements .ann-item{
+    padding: 20px;
+    border-bottom: solid;
+}
+
+.ann-item p2{
+    font-size: 15px;
+    color: gray;
+}
+
+.trend-items{
+    display: grid;
+    margin: 20px;
+    background-color: rgb(235, 231, 231);
+    border-radius: 15px;
+
+}
+
+.trending h{
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+}
+
+.trend-items .profiles{
+    
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 20px;
+    padding: 10px;
+
+}
