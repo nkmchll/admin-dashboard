@@ -77,7 +77,7 @@
 }
 
 .sidebar{
-    background-image: url(./images/gradient.webp);
+    background-image: url(images/gradient.webp);
     background-position: center;
     grid-area: sidebar;
 }
